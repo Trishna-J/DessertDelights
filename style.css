@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+body{
+    background-color:#A9A970;
+    overflow-x: hidden;
+   
+    width: 100%;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   row-gap: 50px;
+   margin-top: 50px;
+   
+   
+    
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+
+margin:20px;
+max-width: 100%;
+    
+}
+
+  .cartbtn{
+    color: black;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 30px;
+    border-radius: 20px;
+border-color:gray;
+border-style:unset;
+margin-top: 20px;
+margin-left: 55px;
+cursor: pointer;
+    
+}
+.active-btn{
+    background-color:#eeba36;
+}
+.plus,.minus{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer
+}
+.count{
+    padding:0 10px;
+}
+
+p{
+line-height: 5px; /* Adjust the value as needed */
+    margin: 0;
+}
+h4 {
+    margin-top:10px;
+    color: black;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.cart-box {
+    position: fixed;       /* Fixes the position in the viewport */
+    top: 20px;             /* Adjust distance from the top */
+    right: 20px;           /* Adjust distance from the right */
+    width: 200px;          /* Adjust width as needed */
+    padding: 20px;
+    border:  solid #2b1b1b;
+    border-radius: 20px;
+    background-color:whitesmoke;
+    display: none;         /* It will only show when an item is added to the cart */
+    z-index: 1000;         /* Brings the cart box above other elements */
+}
+
+.cart-box ul{
+ margin-top: 10px;
+ line-height: 30px;
+ list-style-type: none;
+ margin-left: 10px;
+}
+.cart-box p{
+    margin-top: 15px;
+    font-weight: bold;
+}
+#confirm-order{
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border-style: unset;
+    background-color:#d6d627;
+    text-align: center;
+    font-weight: bolder;
+}
